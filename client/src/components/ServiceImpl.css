@@ -1,0 +1,59 @@
+.service-impl {
+    padding: 4rem;
+    background: #fff;
+    padding-bottom: 0;
+}
+
+.service-impl-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    max-width: 1120px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    gap: 40px;
+}
+
+.serviceHR {
+    border: solid 1px black;
+    width: 100%;
+}
+
+.service-offer {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.service-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.service-offer-name {
+    text-decoration: underline;
+}
+
+.service-text {
+    padding-right: 40%;
+}
+
+.offerHeaderDiv {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .service-offer {
+      width: 100%;
+    }
+
+    .service-impl {
+        padding: 1rem;
+    }
+
+
+}

@@ -1,0 +1,147 @@
+
+.userInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+textarea {
+    width: 70%;
+    height: 140px;
+    padding: 7px;
+    resize: none;
+}
+
+input {
+    width: 57%;
+    border-radius: 17px;
+    padding: 4px;
+    padding-left: 14px;
+}
+
+.memberInfo {
+    display: flex; 
+    flex-direction: column;
+}
+
+.checkBoxSection {
+    display: flex;
+    margin-top: 10px;
+}
+
+.checkBoxInput {
+    width: 47px;
+    cursor: pointer;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 40%;
+}
+
+.contact-wrapper {
+    padding: 4rem;
+}
+
+.submitButton {
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.footer-component {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #242424;
+    width: 100vw;
+    height: 140px;
+    transform: translateY(100%);
+    transition: all 0.5s ease-out;
+}
+
+.footer-component.visible {
+    transform: translateY(0%);
+    transition: transform 1s;
+}
+
+.footer-component:not(.visible) {
+    transform: translateY(100%);
+}
+
+.close-footer-icon {
+    position: absolute;
+    right: 0;
+    font-size: xx-large;
+    bottom: 170px;
+    margin-right: 10%;
+    cursor: pointer;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.close-footer-icon:hover {
+    background-color: #5d5d5d;
+    color: white;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .contactForm {
+      width: 100%;
+    }
+
+    .userInfo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .checkBoxInput {
+        width: fit-content;
+    }
+
+    .checkBoxSection {
+        gap: 34px;
+    }
+
+    .checkboxLabel {
+        display: flex;
+        gap: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .contactForm {
+      width: 70%;
+    }
+
+    .userInfo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
+    }
+
+
+}
